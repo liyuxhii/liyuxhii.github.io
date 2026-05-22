@@ -731,7 +731,7 @@
       <button class="filter-btn active" onclick="filterProjects('all', this)">All</button>
       <button class="filter-btn" onclick="filterProjects('theory', this)">Theorie</button>
       <button class="filter-btn" onclick="filterProjects('illustration', this)">Illustration</button>
-      <button class="filter-btn" onclick="filterProjects('editorial', this)">Editorial</button>
+      <button class="filter-btn" onclick="filterProjects('photo', this)">Photo</button>
       <button class="filter-btn" onclick="filterProjects('branding', this)">Branding</button>
     </div>
 
@@ -807,9 +807,17 @@
       </div>
 
       <!-- EXAMPLE CARD 3 (single image) -->
-      <div class="project-card" data-category="editorial" onclick="openLightbox(this)">
+      <div class="project-card" data-category="photo" onclick="openLightbox(this)">
         <div class="project-thumb">
-          <div class="project-images"></div>
+          <div class="project-images">
+            <!-- Add your images here — first one is the thumbnail -->
+             <img src="images/Eigenes Logo_Seite_1.jpg" alt="Eigenes Logo varianten">
+             <img src="images/Eigenes Logo_Seite_2.jpg" alt="Eigenes Logo Konzept">
+             <img src="images/Visitenkarte_Seite_1.jpg" alt="Visitenkarte Vorderseite">
+             <img src="images/Visitenkarte_Seite_2.jpg" alt="Visitenkarte Rückseite">
+             <img src="images/EIgenes Logo Mockup.jpg" alt="Eigenes Logo Mockup">
+            <!-- <img src="your-image.jpg" alt="Project name" /> -->
+          </div>
           <div class="placeholder-pattern"></div>
           <svg class="thumb-placeholder" width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="#ccc" stroke-width="1.2">
             <rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="8.5" cy="8.5" r="1.5"/>
@@ -818,9 +826,37 @@
           <span class="img-count-badge"></span>
         </div>
         <div class="project-info">
-          <p class="project-category">Editorial</p>
-          <h3 class="project-title">Project Title</h3>
-          <p class="project-desc">Short description of what this project is and what you did.</p>
+          <p class="project-category">Photo</p>
+          <h3 class="project-title">Eigenes Logo</h3>
+          <p class="project-desc">Das Entwickeln und Designen von dem Eigenen Logo inklusive Visitenkarte.</p>
+        </div>
+      </div>
+
+      <!-- EXAMPLE CARD 4 (single image) -->
+      <div class="project-card" data-category="branding" onclick="openLightbox(this)">
+        <div class="project-thumb">
+          <div class="project-images">
+            <!-- Add your images here — first one is the thumbnail -->
+             <img src="images/Quickies_Seite_1.jpg" alt="Quickies_Seite_1">
+             <img src="images/Quickies_Seite_2.jpg" alt="Quickies_Seite_2">
+             <img src="images/Quickies_Seite_3.jpg" alt="Quickies_Seite_3">
+             <img src="images/Quickies_Seite_4.jpg" alt="Quickies_Seite_4">
+             <img src="images/Quickies_Seite_5.jpg" alt="Quickies_Seite_5">
+             <img src="images/Quickies_Seite_6.jpg" alt="Quickies_Seite_6">
+             <img src="images/Quickies_Seite_7.jpg" alt="Quickies_Seite_7">
+            <!-- <img src="your-image.jpg" alt="Project name" /> -->
+          </div>
+          <div class="placeholder-pattern"></div>
+          <svg class="thumb-placeholder" width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="#ccc" stroke-width="1.2">
+            <rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="8.5" cy="8.5" r="1.5"/>
+            <polyline points="21,15 16,10 5,21"/>
+          </svg>
+          <span class="img-count-badge"></span>
+        </div>
+        <div class="project-info">
+          <p class="project-category">Branding</p>
+          <h3 class="project-title">Super Cerealien</h3>
+          <p class="project-desc">Das Designen einer imaginären Packung von Frühstückscerealien.</p>
         </div>
       </div>
 
