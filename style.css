@@ -140,4 +140,9 @@ body:has(dialog.lightbox[open]){overflow:hidden}
   .lb-close{width:3rem;height:3rem}
   .lb-info{bottom:5rem;padding:0 1.5rem}
   .lb-media img,.lb-media video{max-height:65vh}
+  .site-footer::before{content:"";position:absolute;inset:0;
+  background:url(images/checkers.png) center bottom/min(1333px,100%) auto no-repeat;
+  filter:brightness(.8);
+  -webkit-mask-image:radial-gradient(ellipse 35% 55% at 50% 100%,rgba(0,0,0,.7),rgba(0,0,0,.3) 55%,transparent);
+  mask-image:radial-gradient(ellipse 35% 55% at 50% 100%,rgba(0,0,0,.7),rgba(0,0,0,.3) 55%,transparent)}
 }
